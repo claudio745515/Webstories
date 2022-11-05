@@ -1,3 +1,4 @@
+
 class SlideStories {
   constructor(id) {
     this.slide = document.querySelector(`[data-slide="${id}"]`);
@@ -56,6 +57,7 @@ class SlideStories {
     this.activeSlide(0);
     this.addNavigation();
   }
+  
 }
 
 new SlideStories('slide');

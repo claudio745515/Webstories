@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+		<div class= "px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
 			<div class="max-w-screen-sm sm:text-center sm:mx-auto">
 				<h1>"DEVIX Webstories"</h1>
 				<h1 class="text-base text-gray-700 md:text-lg sm:px-4">Webstories educacionais elaborados para você se informar.</h1>
@@ -18,9 +18,11 @@
 		</div>
 	</div>
 </template>
-
+<style src="./style.css"></style>
 <script setup>
+
 const { getItems } = useDirectusItems();
 const posts = await getItems({ collection: "stories" });
+
 
 </script>
